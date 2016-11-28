@@ -3,5 +3,5 @@ project(ERPSystem)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp main.cpp)
+set(SOURCE_FILES main.cpp main.cpp BankDocument.cpp BankDocument.h WarehouseDocument.cpp WarehouseDocument.h)
 add_executable(untitled ${SOURCE_FILES})
