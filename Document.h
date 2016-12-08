@@ -7,12 +7,24 @@
 
 
 #include "Account.h"
+#include <memory>
 
 class Account;
 
+struct Table{
+    std::string nameOfGood;
+    double amount;
+    double sumTable;
+};
+
 enum TypeOfMovement{
-    TYPEOFMOVEMENY_INCOME,
-    TYPEOFMOVEMENY_WITHDRAW
+    TYPEOFMOVEMENT_INCOME,
+    TYPEOFMOVEMENT_WITHDRAW
+};
+
+enum TypeOfDocument{
+    TYPEOFDOCUMENT_BANK,
+    TYPEOFDOCUMENT_WAREHOUSE
 };
 
 class Document {
@@ -20,17 +32,18 @@ protected:
     TypeOfMovement movement;
     int id;
     std::string date;
-    std::string contragent;
+    Account* account;
     double sum;
+    TypeOfDocument type;
 };
 
 class BankDocument: public Document{
-private:
-    Account* account;
+
 };
 
 
 class WarehouseDocument: public Document{
-
+private:
+    Table* table;
 };
 #endif //ERPSYSTEM_DOCUMENT_H
