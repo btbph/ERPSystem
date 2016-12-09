@@ -3,3 +3,12 @@
 //
 
 #include "Document.h"
+
+void Document::setTypeOfMovement(TypeOfMovement tmpmv) {
+    movement=tmpmv;
+}
+
+void Document::setId(int tmpid) {
+    id=tmpid;
+}
+

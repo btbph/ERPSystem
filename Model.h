@@ -6,10 +6,21 @@
 #define ERPSYSTEM_MODEL_H
 
 
-class Model {
-private:
+#include "Account.h"
+#include "Document.h"
+#include <set>
+#include <memory>
+#include <iterator>
 
-};
+class Account;
+class Document;
 
+namespace std {
 
+    class Model {
+    public:
+        set<unique_ptr<Document>> arrayOfDocumets;
+
+    };
+}
 #endif //ERPSYSTEM_MODEL_H

@@ -28,6 +28,15 @@ enum TypeOfDocument{
 };
 
 class Document {
+public:
+
+    void setTypeOfMovement(TypeOfMovement tmpmv);
+    void setId (int tmpid);
+    void setDate;
+
+
+
+
 protected:
     TypeOfMovement movement;
     int id;
@@ -46,4 +55,6 @@ class WarehouseDocument: public Document{
 private:
     Table* table;
 };
+
+
 #endif //ERPSYSTEM_DOCUMENT_H

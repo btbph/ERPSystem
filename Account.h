@@ -11,7 +11,6 @@ class Account {
 public:
     Account(short* tmpnb,int tmpmoney, std::string tmpowner);
 
-
 private:
     short* uniqueNumber;
     int money;
