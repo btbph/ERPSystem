@@ -6,6 +6,7 @@
 #define ERPSYSTEM_PARSINGFILE_H
 
 #include <fstream>
+#include <iostream>
 #include "Document.h"
 
 class Document;

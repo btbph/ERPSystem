@@ -7,7 +7,7 @@
 
 
 #include "Account.h"
-#include <memory>
+
 
 class Account;
 
@@ -32,7 +32,7 @@ public:
 
     void setTypeOfMovement(TypeOfMovement tmpmv);
     void setId (int tmpid);
-    void setDate;
+    //void setDate;
 
 
 
